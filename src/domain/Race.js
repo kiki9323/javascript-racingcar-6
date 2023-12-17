@@ -35,7 +35,9 @@ class Race {
 
   findWinner() {
     const maxPosition = Math.max(...this.cars.map((car) => car.getPosition()));
-    return this.cars.filter((car) => car.getPosition() === maxPosition).map((winner) => winner.name);
+    return this.cars
+      .filter((car) => car.getPosition() === maxPosition)
+      .map((winner) => winner.name);
   }
 }
 

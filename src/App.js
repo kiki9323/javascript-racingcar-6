@@ -1,6 +1,6 @@
 import { CONSTANTS } from './constants/index.js';
 import { Console } from '@woowacourse/mission-utils';
-import InputProcessor from './utils/inputProcessor';
+import InputProcessor from './utils/inputProcessor.js';
 import Race from './models/Race.js';
 
 class App {

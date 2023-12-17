@@ -1,8 +1,9 @@
-class AppError extends Error {
-  static PREFIX = '[ERROR]';
+import MessageFormat from '../utils/MessageFormat.js';
 
+class AppError extends Error {
   constructor(message) {
-    super(`${AppError.PREFIX} : ${message}`);
+    super(MessageFormat.error(message));
+    this.name = 'AppError';
   }
 }
 
